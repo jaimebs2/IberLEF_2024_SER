@@ -1,3 +1,25 @@
+# VS config
+.vscode/
+nohup.out
+.venv/
+DeepSpeed/
+gemma_iberlef_prueba2/
+lightning_logs/
+outputs/
+preds*
+
+# Data
+data/
+results/
+wandb/
+odyssey_data/
+temp.wav
+DeepSpeed/
+
+# Weights
+weights/
+checkpoints/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -121,7 +143,7 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+.venv/
 env/
 venv/
 ENV/

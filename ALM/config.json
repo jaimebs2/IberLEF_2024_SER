@@ -1,0 +1,46 @@
+{
+    "model": "prueba",
+    "fold": 0,
+    "ckpt": "none",
+    "gender": false,
+    "phones": false,
+
+    "llm_name": "gemma",
+    "n_mels":128,
+    "n_ctx": 1500,
+    "n_state": 1280,
+    "n_head": 20,
+    "n_layer": 32,
+    "qwen_output_dim": 2048,
+
+    "use_transformer": true,
+    "use_ln_post": true,
+    "avg_pool": true,
+    "trainable_layers": ["projector"],
+
+    "use_lora": false,
+    "use_lora_phi": false,
+    "lora_target": [],
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.1,
+
+    "dropout": 0.05,
+    "max_epochs": 40,
+    "lr": 1e-4,
+    "batch_size": 4,
+
+    "lr_scheduler": "linear",
+    "start_factor":1,
+    "end_factor":0.2,
+    "total_iters":15,
+
+    "optimizer_type": "adamw",
+    "num_workers": 32,
+    "num_classes": 6,
+    "train_val": false,
+    "shuffle": false,
+    "balance": false
+}
+
+    

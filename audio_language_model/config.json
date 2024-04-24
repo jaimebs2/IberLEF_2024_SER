@@ -1,0 +1,35 @@
+{
+    "model": "prueba",
+    "audio_encoder_name": "whisper-large-v3",
+    "fold": 0,
+    "ckpt": "none",
+    "use_gemma_finetuned": true,
+    "gender": false,
+    "phones": false,
+
+    "trainable_layers": ["projector"],
+
+    "max_epochs": 8,
+    "lr": 1e-4,
+    "batch_size": 4,
+    "accumulate_grad_batches": 1,
+
+    "lr_scheduler": "linear",
+    "start_factor":1,
+    "end_factor":0.1,
+    "total_iters":5,
+
+    "optimizer_type": "adamw",
+    "num_workers": 32,
+    "num_classes": 6,
+    "predict": false,
+    "train_val": false,
+    "shuffle": false,
+    "balance": false,
+
+    "audio_path": false,
+    "use_audio_encoder": true,
+    "deepspeed": false
+}
+
+    
